@@ -11,6 +11,10 @@ var http = require('http'),
 
 var isProduction = process.env.NODE_ENV === 'production';
 
+if (!isProduction) {
+  require('dotenv').config();
+}
+
 // Create global app object
 var app = express();
 
@@ -33,9 +37,12 @@ if (!isProduction) {
 if(isProduction){
   mongoose.connect(process.env.MONGODB_URI);
 } else {
-  mongoose.connect('mongodb://127.0.0.1/conduit');
+  mongoose.connect(process.env.MONGODB_URI)
+  .then(() => console.log('Connection to MongoDB is successfull'))
+
   mongoose.set('debug', true);
 }
+
 
 require('./models/User');
 require('./models/Article');
