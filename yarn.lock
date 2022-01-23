@@ -2226,6 +2226,11 @@
   "resolved" "https://registry.npmjs.org/lodash.memoize/-/lodash.memoize-3.0.4.tgz"
   "version" "3.0.4"
 
+"lodash.merge@^4.6.2":
+  "integrity" "sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ=="
+  "resolved" "https://registry.npmjs.org/lodash.merge/-/lodash.merge-4.6.2.tgz"
+  "version" "4.6.2"
+
 "lodash.once@^4.0.0":
   "integrity" "sha1-DdOXEhPHxW34gJd9UEyI+0cal6w="
   "resolved" "https://registry.npmjs.org/lodash.once/-/lodash.once-4.1.1.tgz"
@@ -2476,15 +2481,16 @@
   optionalDependencies:
     "saslprep" "^1.0.3"
 
-"mongoose-unique-validator@1.0.2":
-  "integrity" "sha1-8Su4kpGL2V4Zy2K+s8ALBEqyXqA="
-  "resolved" "https://registry.npmjs.org/mongoose-unique-validator/-/mongoose-unique-validator-1.0.2.tgz"
-  "version" "1.0.2"
+"mongoose-unique-validator@3.0.0":
+  "integrity" "sha512-WwC09CN2OQ39ONCEN2quR2L5CLHau3p2VYegRMitoVwdKA738uuJRlrTHXt5J6WyJBSloCILxwDZ5qbu4yEXcA=="
+  "resolved" "https://registry.npmjs.org/mongoose-unique-validator/-/mongoose-unique-validator-3.0.0.tgz"
+  "version" "3.0.0"
   dependencies:
     "lodash.foreach" "^4.1.0"
     "lodash.get" "^4.0.2"
+    "lodash.merge" "^4.6.2"
 
-"mongoose@^4.2.8", "mongoose@^6.1.7":
+"mongoose@^6.0.0", "mongoose@^6.1.7":
   "integrity" "sha512-GqU/G/5yu/CWBHdW24cfGPsW4rADER+eeXj+bwvb6mLjg6uAASl8GnE6pmEbafZJ4Uv9V7jf5LaBMJMNwvQEtg=="
   "resolved" "https://registry.npmjs.org/mongoose/-/mongoose-6.1.7.tgz"
   "version" "6.1.7"
